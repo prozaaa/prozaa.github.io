@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ee4267;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#feedback {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#feedback h2 {
+    color: #db2644;
+    margin-top: 0;
+}
+
+#feedback p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #be1515;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d42240;
+}
+
+.stars {
+    display: flex;
+    margin: 10px 0;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 2em;
+    color: #ff0000; /* Cor vermelha para as estrelas */
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.stars input[type="radio"]:checked ~ label {
+    color: #ff0000; /* Cor vermelha para as estrelas selecionadas */
+}
+
+.feedback-list {
+    margin-top: 20px;
+}
+
+.feedback-item {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 1.5em;
+    color: #ff0000; /* Cor vermelha para a avaliação exibida */
+}

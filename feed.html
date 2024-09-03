@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção de Feedback com Avaliação</title>
+    <link rel="stylesheet" href="feed.css">
+</head>
+<body>
+    <header>
+        <h1>FeedBack</h1>
+    </header>
+    <main>
+        <section id="feedback">
+            <h2>Compartilhe Seu Feedback</h2>
+            <p>Queremos ouvir você! Seu feedback é fundamental para que possamos melhorar constantemente e oferecer um ambiente mais seguro e acolhedor. Por favor, dedique alguns minutos para nos contar sua opinião.</p>
+            <form action="/submit-feedback" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="rating">Avaliação:</label>
+                <div class="stars">
+                    <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="5 estrelas">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 estrelas">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 estrelas">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 estrelas">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 estrela">&#9733;</label>
+                </div>
+
+                <label for="comments">Comentário:</label>
+                <textarea id="comments" name="comments" rows="5" required></textarea>
+                
+                <button type="submit">Enviar Feedback</button>
+            </form>
+            <div class="feedback-list">
+                <h3>Comentários Recentes</h3>
+                <div class="feedback-item">
+                    <p><strong>Maria Silva:</strong> "A iniciativa de criar um ambiente mais seguro é essencial. A escola tem feito um ótimo trabalho!"</p>
+                    <div class="rating">★★★★☆</div>
+                </div>
+                <div class="feedback-item">
+                    <p><strong>João Pereira:</strong> "Fico contente em ver o comprometimento com a segurança. Agradeço pelo suporte contínuo."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <a href="register.html" class="btn">Voltar</a>
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+       
+</body>
+</html>
